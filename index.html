@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Aether Projesi - Minimalist Sistem Çekirdeği v0.0.1</title>
+    <style>
+        body {
+            background-color: #F0F0F0; /* Açık Gri */
+            color: #333333; /* Koyu Gri Metin */
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        a {
+            color: #0000CC; /* Kurumsal Mavi Linkler */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #header {
+            background-color: #DDDDDD; /* Başlık Grisi */
+            border-bottom: 2px solid #999999;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        #content {
+            width: 750px; /* Sabit Genişlik ve Ortalama */
+            margin: 0 auto;
+            background-color: #FFFFFF; /* Beyaz İçerik Alanı */
+            border: 1px solid #CCCCCC;
+            padding: 20px;
+            text-align: left;
+        }
+
+        #footer {
+            padding: 15px;
+            font-size: 0.8em;
+            color: #999999;
+            margin-top: 30px;
+        }
+
+        h1, h2 {
+            color: #000080; /* Koyu Mavi Başlıklar */
+            border-bottom: 1px dashed #CCCCCC;
+            padding-bottom: 5px;
+        }
+
+        ul.menu {
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+            border: 1px solid #CCCCCC;
+            background-color: #EEEEEE;
+        }
+
+        ul.menu li {
+            display: inline;
+            padding: 0 15px;
+            border-right: 1px solid #CCCCCC;
+        }
+
+        ul.menu li:last-child {
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>AETHER PROJESİ</h1>
+        <p>Minimalist Yorumlayıcı Çekirdeği (v0.0.1 Beta)</p>
+        
+        <ul class="menu">
+            <li><a href="#tanitim">Tanıtım</a></li>
+            <li><a href="#indirme">İndirme</a></li>
+            <li><a href="#teknik">Teknik Özellikler</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        
+        <h2 id="tanitim">📜 Tanıtım</h2>
+        <p>Aether (eski adıyla MicroCode), modern programlama dillerinin gereksiz karmaşıklığına ve kaynak israfına karşı geliştirilmiş, ultra-minimalist bir yorumlayıcı çekirdeğidir.</p>
+        <p>Geliştirme felsefemiz, sadece **temel atama** ve **çıktı** işlemlerine odaklanarak, programı mümkün olan **en küçük ikili dosya boyutuna** indirmektir. Aether, düşük kaynaklı sistemler ve gömülü projeler için ideal, basit ve güvenilir bir temel sunar.</p>
+
+        <h2 id="indirme">💾 İndirme</h2>
+        <p>Aether çekirdeği, MSYS2 ortamında GCC ile optimize edilmiştir. Derlenmiş ikili dosya boyutu, optimizasyon seviyesine bağlı olarak **20 KB'ın altındadır**.</p>
+        <ul>
+            <li><a href="https://archive.org/download/aether_kernel.org/aether.c">Aether Çekirdek Kaynak Kodu (C)</a></li>
+            <li><a href="https://archive.org/download/aether_202512/aether.exe">Aether Yürütülebilir Dosyası (.exe)</a></li>
+        </ul>
+
+        <h2 id="teknik">⚙️ Teknik Özellikler</h2>
+        <p>Aether, terminal tabanlı, nokta (.) ile tetiklenen komut işleme döngüsüne sahiptir.</p>
+        <pre style="border: 1px solid #999999; background-color: #EEEEEE; padding: 10px;">
+        // Komut Sözdizimi:
+        [İNDİS] = [DEĞER]   // Örn: 0 = 42
+        PRT [İNDİS]          // Örn: PRT 0
+
+        // Çalıştırmak için komut dizisinin sonuna '.' konulmalıdır.
+        </pre>
+        <p>Çekirdek, **50 adet tamsayı (int)** değişkeni için statik bellek tahsis eder. Harici bir 'main' programına entegre edilmek üzere tasarlanmıştır.</p>
+
+        <h2 id="iletisim">✉️ İletişim</h2>
+        <p>Proje geliştiricisi ve destekçisi: **Balli_Süt** (Blok Evren Kanalı).</p>
+        <p>Geliştirme süreci ve alaycı yorumlar için: <a href="https://www.youtube.com/@BlokEvren">BLOK EVREN (YouTube)</a></p>
+    </div>
+
+    <div id="footer">
+        © 1999-2025 Aether Projesi. Tüm Hakları Saklıdır.
+    </div>
+
+</body>
+</html>
